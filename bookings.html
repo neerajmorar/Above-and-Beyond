@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+    <title>Above & Beyond | Fine Indian Cuisine | Reservations</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="description" content="Above & Beyond is the finest Indian Restaurant located at the heart of North-West London with recommendations like no other.">
+
+    <meta name="keywords" content="Above,and,Beyond,Indian,Restaurant,North,West,London,Indian%20Cuisine,bookings,reservations">
+
+    <link type="text/css" rel="stylesheet" href="restaurantss.css" media="only screen and (min-device-width: 481px)">
+
+    <link type="text/css" rel="stylesheet" href="mobile.css" media="only screen and (max-device-width: 480px)">
+
+    <link type="text/css" rel="stylesheet" href="print.css" media="print">
+
+    <script type="text/javascript" src="FormValidation.js"></script>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li class="links"><a href="index.html">Home</a></li>
+            <li class="links"><a href="aboutus.html">About Us</a></li>
+            <li class="links"><a href="menu.html">Menu</a></li>
+            <li class="links"><a href="location.html">Our Location</a></li>
+            <li><a href="bookings.html">Reservations</a></li>
+        </ul>
+    </div>
+
+    <div class="body">
+        <div class="content">
+            <h1>Above & Beyond</h1>
+
+            <h2>Reservations</h2>
+
+            <p>To make reservations please either use the booking form below or call us on <strong>020 8782 6454</strong>.</p>
+            <p><strong>Important: If your party size is larger than 20, please call us on the number above. For information on events, please click <a href="aboutus.html#events">here</a>.</strong></p>
+
+            <br>
+
+            <img src="reservations.jpg" width="490" height="327" alt="A picture of a reserved table.">
+
+            <h2>Booking Form</h2>
+
+            <p>Once you have submitted your booking we will contact you as soon as possible to confirm your booking.</p>
+            <p><strong>NB: Although the form asks for Dietary Specifics, we still highly recommend that guests with special dietary requirements notify staff of their allergies. The form just gives us a general idea of what we can expect so that we can make our service a better experience for you.</strong></p>
+
+            <form name="bookingsform" method="POST" action="thankyou.html" onsubmit="return checkForm()" onreset="clearForm()">
+                <!-- The <form> tag allows you to create a HTML form, the name attribute gives the form a name, the method attribute tells the form to post the information to a server (which is secure compared to GET) and the action attribute tells the form to redirect the user to another page and also sends the information to that page. -->
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <!-- The <legend> tag describes what the fieldset is about. -->
+                    <p>
+                        <label>First Name:</label>
+                        <br>
+                        <input type="text" name="firstname" onchange="checkFirstName()">
+                        <!-- The <label> tag describes what the field is about, the <input> tag tells the form what type of character set the field should take, in this case just text. -->
+                    </p>
+                    <div id="firsttext"></div>
+                    <p>
+                        <label>Last Name:</label>
+                        <br>
+                        <input type="text" name="lastname" onchange="checkLastName()">
+                    </p>
+                    <div id="lasttext"></div>
+                    <p>
+                        <label>Contact Telephone No.:</label>
+                        <br>
+                        <input type="tel" name="phonenumber" maxlength="11" onchange="checkTel()">
+                        <!-- The 'tel' input type tells the form to accept telephone numbers only, and the maxlength attribute tells the form the maximum number of characters the field should take. -->
+                    </p>
+                    <div id="phonenumberwarn"></div>
+                    <p>
+                        <label>Contact Email Address:</label>
+                        <br>
+                        <input type="email" name="email" onchange="checkEmail()">
+                        <!-- The 'email' input type tells the form to only accept email addresses, and will glow red when the user doesn't put down a valid email address. -->
+                    </p>
+                    <div id="emailwarn"></div>
+                    <p>
+                        <label>When can we call you?:</label>
+                        <br>
+                        <input type="text" name="contactconvenience" placeholder="HH:MM or &#34;anytime&#34;" onchange="checkCallTime()">
+                    </p>
+                    <div id="callbackwarn"></div>
+                </fieldset>
+                <fieldset>
+                    <legend>Party Information</legend>
+                    <p>
+                        <label>Select Your Party Size (Including Yourself):</label>
+                        <br>
+                        <select id="partysize" onchange="checkPartySize()">
+                            <!-- The <select> tag creates a drop down menu. -->
+                            <option value="0">-</option>
+                            <option value="2">2</option>
+                            <!-- The <option> tag creates one option for a user to choose from, the value attribute tells the form what the option means. One <option> tag creates one option. -->
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                        </select>
+                    </p>
+                    <div id="partywarn"></div>
+                    <p>
+                        <label>Dietary Specifics:</label>
+                        <input type="checkbox" name="dietarySpecific" value="Nut Allergy">
+                        Nut Allergy
+                        <!-- The 'checkbox' input type creates a check box for a user to click on, the input type can take a null value. -->
+                        <input type="checkbox" name="dietarySpecific" value="Gluten Allergy">
+                        Gluten Allergy
+						<input type="checkbox" name="dietarySpecific" value="Lactose">
+                        Lactose Intolerance
+						<input type="checkbox" name="dietarySpecific" value="Other Allergy">
+                        Other; Please Specify in Special Instructions
+                    </p>
+                    <p>
+                        <label>Smoking or Non-Smoking:</label>
+                        <input type="radio" name="smoking" value="smoking" onchange="checkRadio()">
+                        Smoking
+                        <!-- The 'radio' input type creates a radio button for a user to choose from, this cannot take a null value and one option must be selected. -->
+                        <input type="radio" name="smoking" value="non-smoking" onchange="checkRadio()">
+                        Non-Smoking
+                    </p>
+                    <div id="radiowarn"></div>
+                </fieldset>
+                <fieldset>
+                    <legend>Event Information</legend>
+                    <p>
+                        <label>Date:</label>
+                        <br>
+                        <input type="text" id="date" placeholder="DD/MM/YYYY" onchange="checkDate()">
+                        <!-- The 'number' input type tells the form that the field can only take numbers. The 'date' input type creates a warning on the W3 Validator because not all web browsers support the input type. -->
+                    </p>
+                    <div id="datewarn"></div>
+                    <p>
+                        <label>Time:</label>
+                        <br>
+                        <select id="time" onchange="checkTime()">
+                            <!-- This <select> tag creates another drop down list full of times. -->
+                            <option value="0">-</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
+                            <option value="22:30">22:30</option>
+                            <option value="23:00">23:00</option>
+                            <option value="23:30">23:30</option>
+                            <option value="24:00">24:00</option>
+                        </select>
+                    </p>
+                    <div id="timewarn"></div>
+                    <p>
+                        <label>Special Instructions:</label>
+                        <br>
+                        <textarea id="specialInstructions" rows="10" cols="50"></textarea>
+                        <!-- The <textarea> tag creates a text box for a user to type into. The rows attribute tells the form the number of rows the text box can take, and the cols attribute tells the form the number of columns the text box can take. -->
+                    </p>
+                    <p>
+                        <input class="i1" type="reset" value="Reset Form">
+                        <!-- The 'reset' input type tells the form to create a reset button to which a user can click on to reset all the fields. -->
+                        <input class="i1" type="submit" value="Submit Form">
+                        <!-- The 'submit' input type tells the form to create a submit button to which a user can click to submit the details they have filled in. -->
+                    </p>
+                </fieldset>
+            </form>
+            <!-- This tag signals the end of the form. -->
+        </div>
+    </div>
+
+
+    <p>
+        <a class="vallink" href="http://www.w3.org/html/logo/" target="_blank">
+            <img class="vallogo" src="http://www.w3.org/html/logo/badge/html5-badge-h-css3.png" width="133" height="64" alt="HTML5 Powered with CSS3 / Styling" title="HTML5 Powered with CSS3 / Styling">
+        </a>
+        <br>
+        <small><a href="http://validator.w3.org/check?uri=https%3A%2F%2Fsoc.uwl.ac.uk%2F~21249593%2Fbookings.html" target="_blank">Link to Validation Result</a></small>
+        <!-- Link to validation result. -->
+        <small><a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsoc.uwl.ac.uk%2F%7E21249593%2Frestaurantss.css&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning=" target="_blank">Link to CSS Validation Result</a></small>
+        <small><a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsoc.uwl.ac.uk%2F%7E21249593%2Fmobile.css&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning=" target="_blank">Link to Mobile CSS Validation Result</a></small>
+        <small><a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsoc.uwl.ac.uk%2F%7E21249593%2Fprint.css&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning=" target="_blank">Link to Print CSS Validation Result</a></small>
+    </p>
+
+    <small>&#169; Copyright 2013 by Neeraj Morar. All Rights Reserved.</small>
+    <small>Image courtesy of www.bordinos.com/wp-content/uploads/2011/12/bordinos-reservations.jpg</small>
+    <small>Background image courtesy of www.texture-restaurant.co.uk/about.php.</small>
+</body>
+</html>

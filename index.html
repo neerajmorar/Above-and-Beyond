@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<!-- This element tells us and the web browser what type of document this is. It declares to the web browser what version of HTML the page is written in. -->
+
+<html lang="en">
+<!-- The <html> element tells us and the web browser that this is a web page and the "lang="en"" indicates to us that this web page will be in English. -->
+
+<head>
+    <!-- The <head> tag allows us to put down information about the page. All information within this tag is hidden unless the user opens up the source code. -->
+
+    <title>Above & Beyond | Fine Indian Cuisine | Home</title>
+    <!-- The <title> element tells us the name of the web page when seen on search engines or in bookmarks. -->
+
+    <meta charset="UTF-8">
+    <!-- This element tells us the character set that this website uses, which in this case is "UTF-8". -->
+
+    <meta name="description" content="Above & Beyond is the finest Indian Restaurant located at the heart of North-West London with recommendations like no other.">
+    <!-- This element gives us a description of the website when seen on search engines. -->
+
+    <meta name="keywords" content="Above,and,Beyond,Indian,Restaurant,North,West,London,Indian%20Cuisine">
+    <!-- This element gives us keywords that when searched for in search engines this page will be more likely to appear, relevant to the user's search. -->
+
+    <link type="text/css" rel="stylesheet" href="restaurantss.css" media="only screen and (min-device-width: 481px)">
+    <!-- This element links a cascading style sheet to the website which gives the website a theme and makes it presentable to the audience. -->
+	
+	<link type="text/css" rel="stylesheet" href="mobile.css" media="only screen and (max-device-width: 480px)">
+	<!-- A link to mobile style sheet, with the media specifying the width of the device that is allowed to use it.-->
+	
+	<link type="text/css" rel="stylesheet" href="print.css" media="print">
+	<!-- A link to a print style sheet when user wants to print the web page.-->
+	
+	<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<!-- The closing <head> tag, signalling the end on the information of the website. -->
+
+<body>
+    <!-- The <body> tag indicates to us that content will appear on the page itself. -->
+
+    <div class="navbar">
+        <ul>
+            <li class="links"><a href="index.html">Home</a></li>
+            <li class="links"><a href="aboutus.html">About Us</a></li>
+            <li class="links"><a href="menu.html">Menu</a></li>
+            <li class="links"><a href="location.html">Our Location</a></li>
+            <li><a href="bookings.html">Reservations</a></li>
+        </ul>
+    </div>
+    <!-- This list of anchor tags give us relative links to another page on the site. -->
+
+    <div class="body">
+        <!-- Div tags are used to divide up sections of the web page to allow style sheets to target specific sections of the website. -->
+        <div class="content">
+            <!-- The class attribute within tags are used to group certain elements together for style sheets to target and apply the same theme for all elements with the same class. -->
+            <h1>Above & Beyond</h1>
+            <!-- The <h1> tag is a heading tag that tells us the name of the website for the users' convenience. -->
+
+            <h2>Welcome to Above & Beyond</h2>
+            <!-- The <h2> tag is a subheading tag which gives us the name of the section the following information will be about. -->
+
+            <p>Above & Beyond is an Indian restaurant located at the heart of North-West London with <a href="#recommendations">reviews</a> that boast the flavours and colours that we create. Founded in Kingsbury, Above & Beyond have been cooking the most delicious meals that the Indian cuisine has to offer for over 25 years, to which we have rose to great popularity amongst food-lovers alike who have dined with us.</p>
+            <p>We are known for our simple, honest food that bursts with amazing colour and gorgeous flavours in a venue that we all know and love - the good, old pub house. Not only do we conceive amazing food, we are also known for our wide array of beverages ranging from fruity, crisp wine to the simple curry-complementing beer.</p>
+            <p>Please have a look around our website, to which you will find more information <a href="aboutus.html">about us</a>, <a href="menu.html">our menu</a>, <a href="location.html">our location</a>, and creating <a href="bookings.html">bookings and reservations</a>. We hope to see you dine with us!</p>
+            <!-- The <p> tag enables us to use paragraphs, the information within these tags relating to the "Welcome to Above & Beyond" <h2> tag. -->
+
+            <br>
+            <!-- The <br> tag is break tag which gives spacing between the image below and the paragraphs above. -->
+
+            <img src="shrimp.jpg" width="264" height="400" alt="Crispy Shrimp on Crispy Vegetables served with Red Chilli Sauce." title="Crispy Shrimp on Crispy Vegetables served with Red Chilli Sauce">
+            <!-- The <img> tag enables us to link pictures to the page and allows us to adjust the characteristics of the image in terms of width and height, as well as providing alternative text. The title attribute gives the image pop-up text when a user hovers over the image. -->
+
+            <h2 id="recommendations">Recommendations</h2>
+
+            <ul>
+                <!-- This is an unordered list, used for creating a list with no numerical order. Here it was used to create a list of recommendations. -->
+                <li>Maecenas pulvinar enim nulla, quis ornare purus viverra at. Proin orci ante, tincidunt a fringilla quis, elementum eu sem. Mauris imperdiet lobortis ligula, at faucibus orci scelerisque quis. Suspendisse adipiscing volutpat est, ut mollis ipsum facilisis ut. Donec cursus quis eros nec consequat. Donec facilisis interdum tortor in iaculis. Aliquam quis massa congue, lobortis libero et, aliquet erat. Morbi tristique vitae purus nec pharetra. Etiam scelerisque felis ac euismod accumsan. Quisque consectetur mattis nibh, vel venenatis mi pulvinar sit amet. Aliquam erat volutpat. - <span>Daksha Gajjar</span></li>
+                <li>Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla ac porta purus, et elementum tortor. Nam volutpat tempor urna, a aliquam metus porttitor malesuada. Maecenas luctus velit tellus, iaculis pharetra odio porta eget. Duis vulputate dictum leo, ac mollis augue mollis ut. Quisque faucibus tellus vitae ultrices tincidunt. In at odio suscipit, tristique eros eu, pretium elit. Proin vitae rhoncus massa, eget sagittis metus. Sed mattis ac est eget consequat. Duis enim tellus, varius id egestas sit amet, ullamcorper nec neque. Cras eleifend eros ligula, at suscipit neque egestas at. Sed in est tellus. - <span>James McRae</span></li>
+                <!-- The span tag allows us to target specific words or phrases which can be given a specific theme through the use of CSS. In this case, all these names will be bold. -->
+                <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer gravida laoreet tempor. Etiam consequat, orci nec placerat varius, augue neque gravida odio, quis luctus felis elit vel dui. Nullam euismod, eros vitae blandit mollis, eros lorem varius est, et sollicitudin purus velit ut nisl. Quisque blandit turpis lobortis condimentum porttitor. Nunc a laoreet odio. Ut accumsan enim sagittis eros laoreet, nec eleifend nunc interdum. Maecenas ac lorem consequat, congue mi non, vulputate odio. Nullam nec lorem ultrices, rhoncus erat ac, tristique nisi. Curabitur elit nisl, imperdiet eget sagittis in, ultricies at arcu. Sed lobortis pharetra erat. Aenean mollis fringilla eros, non iaculis turpis dictum in. - <span>Pushpa Pindoria</span></li>
+                <li>In hac habitasse platea dictumst. Phasellus tristique quis ipsum vitae pellentesque. Donec at condimentum orci, non luctus lorem. Mauris auctor mi at massa tempus, eget semper mi feugiat. Phasellus pharetra, lacus in consectetur placerat, orci mauris euismod dolor, volutpat ultricies urna mi sed odio. Vestibulum quis nibh in massa rutrum rhoncus. Morbi non interdum magna. Phasellus eu egestas dui, in posuere odio. Integer in commodo velit. Nulla rutrum tincidunt ipsum, a fringilla augue ullamcorper vel. Praesent convallis, nisl a pellentesque dapibus, felis magna volutpat dui, sit amet adipiscing dui diam in metus. Sed sed venenatis turpis. Vivamus vehicula eleifend eleifend. Mauris tortor massa, luctus id justo at, accumsan ultrices tellus. Pellentesque rhoncus libero non magna aliquam, eget egestas mauris egestas. - <span>Mo Doaie</span></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <p>
+        <a class="vallink" href="http://www.w3.org/html/logo/" target="_blank">
+            <img class="vallogo" src="http://www.w3.org/html/logo/badge/html5-badge-h-css3.png" width="133" height="64" alt="HTML5 Powered with CSS3 / Styling" title="HTML5 Powered with CSS3 / Styling">
+        </a>
+        <br>
+        <small><a href="http://validator.w3.org/check?uri=https%3A%2F%2Fsoc.uwl.ac.uk%2F~21249593%2Findex.html" target="_blank">Link to Validation Result</a></small>
+        <!-- Link to validation result. -->
+		<small><a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsoc.uwl.ac.uk%2F%7E21249593%2Frestaurantss.css&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning=" target="_blank">Link to CSS Validation Result</a></small>
+		<small><a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsoc.uwl.ac.uk%2F%7E21249593%2Fmobile.css&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning=" target="_blank">Link to Mobile CSS Validation Result</a></small>
+		<small><a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsoc.uwl.ac.uk%2F%7E21249593%2Fprint.css&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning=" target="_blank">Link to Print CSS Validation Result</a></small>
+    </p>
+
+    <small>&#169; Copyright 2013 by Neeraj Morar. All Rights Reserved.</small>
+    <!-- The <small> tag makes text small, used for copyright information, the "&#169;" is the HTML code for the copyright symbol. -->
+    <small>Image courtesy of FreeDigitalPhotos.net, "Shrimp" provided by Rakratchada Torsap.</small>
+    <!-- This information is used to give reference to the image provider. -->
+    <small>Background image courtesy of www.texture-restaurant.co.uk/about.php.</small>
+    <!-- This information is used to give reference to the background image provider. -->
+</body>
+<!-- The closing <body> tag, signalling the end of the page's content. -->
+
+</html>
+<!-- The closing <html> tag, signalling the end of the web page. -->

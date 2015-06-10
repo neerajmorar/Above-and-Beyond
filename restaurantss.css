@@ -1,0 +1,412 @@
+/*The @font-face code lets the browser download a font that isn't pre-installed on the user's PC so that custom fonts can be used.
+  Only the latest browsers support this.*/
+
+@font-face
+{
+    font-family: 'Skolar OT';
+    src: url('Skolar%20OT.otf');
+}
+
+/*Targets the html coding of the web pages.*/
+
+html
+{
+    overflow-y: scroll; /*This inserts a scroll-bar on each page to prevent the page from shifting to the right if the page can't be scrolled.*/
+}
+
+/*Targets the body of the web page.*/
+
+body
+{
+    font-family: 'Skolar OT', Calibri, Arial, sans-serif; /*Uses the Skolar OT font defined through @font-face, if browser doesn't support this then it will use Calibri, and so on and so forth.*/
+    text-align: justify; /*This justifies the text on all pages unless otherwise stated.*/
+    margin-left: auto; /*This allows the content have equal amounts of white space on each side.*/
+    margin-right: auto;
+    width: 1080px; /*This sets the width of the whole body to be a maximum of 1080px.*/
+    background-image: url("backgroundimage.jpg"); /*Sets the background to an image located locally within the root of the website's directory.*/
+    background-size: 2000px 1200px; /*Sets the dimensions of the background image.*/
+    background-repeat: no-repeat; /*The background image only displays once,*/
+    background-attachment: fixed; /*When the page is scrolled the background image will appear not to move with the rest of the document.*/
+}
+
+/*Targets the navbar class on each web page.*/
+
+.navbar
+{
+    height: 50px; /*Sets the navigation bar to a height of 50px and a width of 1080px.*/
+    width: 1080px;
+    background-color: rgba(255,255,255,0.5); /*This gives the colour of the div the navigation links are contained in to a transparent white. The transparency is given by the alpha value; 1 being opaque and anything below transparent.*/
+    border-style: none; /*This makes the border of the div invisible.*/
+    margin: auto; /*Sets the margin of the navbar automatically by the browser.*/
+    text-align: center; /*Aligns the text to the centre.*/
+}
+
+    /*Targets the ul element within the navbar class.*/
+
+    .navbar ul
+    {
+        list-style-type: none; /*Removes the bullet points created by the ul element.*/
+        padding: 15px; /*Adds 15px of white space from all sides to the list.*/
+    }
+
+        /*Targets the list within the ul element of the navbar class.*/
+
+        .navbar ul li
+        {
+            display: inline; /*Makes the list a horizontal list rather than the default vertical one.*/
+        }
+
+/*Targets the links class within each web page.*/
+
+.links
+{
+    border-style: none solid none none; /*Adds a right border to the list, this was used to create a divider between the list in the navbar.*/
+    border-width: 1px; /*Sets the width of the border to 1px.*/
+    padding-right: 5px; /*Gives 5px of whitespace between the words and the right border. This was used for clarity.*/
+}
+
+/*Targets the body class.*/
+
+.body
+{
+    width: 1080px; /*Sets this div to be 1080px wide.*/
+    height: 745px; /*Sets the height of the div to be 745px long.*/
+    border-style: none;
+    margin-top: 10px; /*Positions the div 10px at the top from the navbar.*/
+    margin-left: auto; /*Makes the browser automatically align the div in the centre of the screen.*/
+    margin-right: auto;
+    overflow-y: auto; /*Lets the browser choose whether to add a scrollbar in the y-direction to the div or not.*/
+    overflow-x: hidden; /*Prevents the browser from displaying a scrollbar in x-direction, clipping any content that overflows the div in that direction.*/
+    background-color: rgba(255,255,255,0.5);
+}
+
+/*Targets the content class within the body class on each web page.*/
+
+.content
+{
+    width: 1000px; /*Sets the width of the content to be a maximum of 1000px wide. Used for clarity.*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px; /*Creates space between the last piece of content and the bottom of the body class.*/
+}
+
+/*Targets the span element.*/
+
+span
+{
+    font-weight: bold; /*Used to make the names of the people who provided the recommendations bold. This was used for styling purpose hence the <strong> element wasn't used.*/
+}
+
+/*Targets horizontal lines.*/
+
+hr
+{
+    margin-left: 10em; /*Makes the horizontal lines shorter on the left and right sides.*/
+    margin-right: 10em;
+    color: black;
+    border-style: solid; /*Used to make the hr element a solid line, as opposed to a dashed or dotted line.*/
+}
+
+/*Targets the mapinfo id on the menu page.*/
+
+#mapinfo
+{
+    text-align: center; /*Makes this specific paragraph centred.*/
+}
+
+/*Targets the table on the menu page.*/
+
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px; /*Gives the table rounded corners with a radius of 5px.*/
+    border-spacing: 0; /*Removes white space between borders.*/
+    border-collapse: collapse; /*Makes borders a single border rather than separated borders.*/
+    text-align: center;
+    font-size: larger; /*Makes the text larger for clarity.*/
+}
+
+/*Targets images on each web page.*/
+
+img
+{
+    display: block; /*Treats images as if they were paragraphs.*/
+    margin-left: auto; /*Used to centre the images.*/
+    margin-right: auto;
+    border: 5px solid; /*Makes the border of all images 5px thick and of a solid style.*/
+    border-color: #d4d4d4; /*Colours the border a light grey colour.*/
+    box-shadow: 5px 5px 5px #777; /*Creates a drop-shadow. 5px horizontal shadow, 5px vertical shadow, 5px of blur and a type of black colour.*/
+}
+
+/*Targets the image map specifically on the menu page.*/
+
+#chefmap
+{
+    margin-bottom: 20px; /*Adds 20px of space between the bottom of the image and the horizontal image.*/
+    border-color: #d4d4d4;
+}
+
+/*Targets the image on the "Thank You" page.*/
+
+#thankyou
+{
+    margin-top: 50px; /*Adds 50px of space from the paragraph above.*/
+}
+
+/*Targets the HTML5 logo.*/
+
+.vallogo
+{
+    border: none;
+    box-shadow: none;
+}
+
+/*Targets the link associated with the HTML5 logo.*/
+
+.vallink
+{
+    display: block;
+    width: 133px; /*Makes the width of the link the same as the image.*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Targets all links.*/
+
+a
+{
+    color: #A60F28; /*Gives a nice red colour to the links.*/
+    text-decoration: none; /*Removes the underline from all links.*/
+    transition: 1s; /*Slowly changes the colour of the link when a mouse hovers on it.*/
+}
+
+    /*Targets links that have a mouse hovering on it.*/
+
+    a:hover
+    {
+        color: #80145c; /*Changes the colour from the red to a nice deep purple.*/
+    }
+
+/*Targets the menu on the menu page.*/
+
+#menu
+{
+    text-align: center; /*Makes all the text associated with the menu itself to be centred.*/
+}
+
+/*Targets all h4 elements.*/
+
+h4
+{
+    text-align: center;
+}
+
+/*Targets only the definition list.*/
+
+dl
+{
+    text-align: center;
+}
+
+/*Targets the field sets on the reservations page.*/
+
+fieldset
+{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+/*Targets the text specific inputs of the bookings form.*/
+
+input[type="text"]
+{
+    font-family: Arial; /*Sets the input font to be different from the rest of the website. Used for clarity.*/
+    background-color: rgba(255,255,255,0.5); /*Makes the input boxes transparent.*/
+    border: 1px inset #EBE9ED;
+    border-radius: 2px;
+}
+
+/*Targets the email specific inputs of the bookings form.*/
+
+input[type="email"]
+{
+    font-family: Arial;
+    background-color: rgba(255,255,255,0.5);
+    border: 1px inset #EBE9ED;
+    border-radius: 2px;
+}
+
+/*Targets the telephone specific inputs of the bookings form.*/
+
+input[type="tel"]
+{
+    font-family: Arial;
+    background-color: rgba(255,255,255,0.5);
+    border: 1px inset #EBE9ED;
+    border-radius: 2px;
+}
+
+/*Targets the number specific inputs of the bookings form.*/
+
+input[type="number"]
+{
+    font-family: Arial;
+    background-color: rgba(255,255,255,0.5);
+    border: 1px inset #EBE9ED;
+    border-radius: 2px;
+}
+
+/*Targets the drop-down menu.*/
+
+select
+{
+    font-family: Arial;
+    background-color: rgba(255,255,255,0.5);
+    border: 1px inset #EBE9ED;
+    border-radius: 2px;
+}
+
+/*Targets the text box of the forms page.*/
+
+textarea
+{
+    font-family: Arial;
+    background-color: rgba(255,255,255,0.5);
+    resize: none; /*Removes the user's ability to resize the text box.*/
+    border: 1px inset #EBE9ED;
+    border-radius: 2px;
+}
+
+/*Targets the small elements on each web page.*/
+
+small
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+    text-align: center;
+}
+
+#firsttext
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+
+#lasttext
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+
+#emailwarn
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+
+#phonenumberwarn
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+
+#callbackwarn
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+
+#radiowarn
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+
+#datewarn
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+
+#timewarn
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+
+#partywarn
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+
+#receipt
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    #receipt p
+    {
+        text-align: center;
+    }

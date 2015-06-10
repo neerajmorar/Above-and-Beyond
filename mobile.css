@@ -1,0 +1,324 @@
+body {
+	font-family: Arial, sans-serif; /*Using only Arial to make for better reading on small screens.*/
+	width: 960px; /*Readjusted the width of the page from 1080px to 960px.*/
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: x-large; /*Made the font really large for better reading.*/
+	background-color: #cecece;
+	background-image: url("backgroundimage.jpg");
+	background-size: 11666px 7000px; /*Readjusted the size of the background image to fill the screen.*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: -3250px 0px; /*Repositioned the background image so that the main focal point is in view. The image has been moved the left by 3250px.*/
+}
+.navbar {
+    height: 259px; /*A taller navbar so it's easier to click on the links within.*/
+    width: 960px;
+    background-color: rgba(255,255,255,0.5);
+    border-style: none;
+	margin-top: -30px;
+    margin-left: auto;
+	margin-right: auto;
+    text-align: center;
+	font-size: 40px; /*Larger navigation link size.*/
+}
+.navbar ul {
+	list-style-type: none;
+	padding: 15px; /*More white space added to make the list more appealing on a small screen.*/
+}
+.navbar ul li {
+	position: relative;
+	top: 90px;
+	display: inline;
+	font-size: 40px;
+}
+.links {
+	border-style: none solid none none;
+	border-width: 1px;
+	padding-right: 10px; /*Added extra white space between the links and its border.*/
+	font-size: 40px;
+}
+.body {
+	width: 960px;
+	border-style: none;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+    background-color: rgba(255,255,255,0.5);
+}
+.content{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}	
+span {
+	font-weight: bold;
+}
+hr {
+	margin-left: 10em;
+	margin-right: 10em;
+	color: black;
+	border-style: solid;
+}
+#mapinfo {
+	display: none; /*Removed the paragraph associated with the image map because the map isn't needed in order to conform with the mobileOK checker.*/
+}
+table {
+	width: 900px; /*Made the table larger so that it's nicer to read the tabulated data within it.*/
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-spacing: 0;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: xx-large; /*Very large font for the tabulated data.*/
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px solid;
+	border-color: #d4d4d4;
+	box-shadow: 5px 5px 5px #777;
+}
+#chefmap {
+	display: none; /*Removes the image map in order to conform to the mobileOK checker.*/
+}
+map {
+	display: none;
+}
+h3.hidden {
+	display: none; /*Hides the header associated with the TfL widget.*/
+}
+#tfl {
+	display: none; /*Removes the TfL widget as it's not very useful on mobile devices.*/
+}
+#thankyou {
+	margin-top: 50px;
+}
+.vallogo {
+	border: none;
+	box-shadow: none;
+}
+.vallink {
+	display: block;
+	width: 133px;
+	margin-left: auto;
+	margin-right: auto;
+}
+a {
+	color: #A60F28;
+	text-decoration: none;
+	transition: 1s;
+}
+a:hover {
+	color: #80145c;
+}
+#menu {
+	text-align: center;
+}
+h4 {
+	text-align: center;
+}
+dl {
+	text-align: center;
+}
+fieldset {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	font-size: 40px; /*Makes the text in the field set larger.*/
+}
+legend {
+	font-size: 40px; /*Makes the legend text larger.*/
+}
+input[type="checkbox"] {
+	display: block;
+	width: 40px; /*All inputs have a larger box for easier data input on the user's behalf.*/
+	height: 40px;
+}
+input[type="radio"] {
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+input[type="text"] {
+	font-family: Arial;
+	font-size: 45px; /*Larger input text font size, easier for the user to see what they're typing in.*/
+	background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+	width: 790px;
+	height: 200px;
+}
+input[type="email"] {
+	font-family: Arial;
+	font-size: 45px;
+	background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+	width: 790px;
+	height: 200px;
+}
+input[type="tel"] {
+	font-family: Arial;
+	font-size: 45px;
+	background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+	width: 790px;
+	height: 200px;
+}
+input[type="number"] {
+	font-family: Arial;
+	font-size: 45px;
+	background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+	width: 790px;
+	height: 200px;
+}
+select {
+	font-family: Arial;
+	font-size: 40px;
+	background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+}
+textarea {
+	font-family: Arial;
+	font-size: 70px;
+	background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+	width: 825px;
+	height: 500px;
+	resize: none;
+}
+.i1 {
+	display: block;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px; /*Makes the Submit and Reset buttons significantly larger so it's easier for the user to perform an action with the form.*/
+	width: 800px;
+	font-size: 40px;
+	border-radius: 0px;
+}
+small {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	text-align: center;
+}
+
+#firsttext
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+
+#lasttext
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+
+#emailwarn
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+
+#phonenumberwarn
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+
+#callbackwarn
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+
+#radiowarn
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+
+#datewarn
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+
+#timewarn
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+
+#partywarn
+{
+    text-align: justify;
+    height: 19px;
+    border: 1px #666;
+    border-radius: 2px;
+    border-style: none;
+    border-color: black;
+    color: #A60F28;
+    display: none;
+}
+

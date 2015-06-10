@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<!-- This is a dummy page giving the bookings form a temporary action page. -->
+
+<html lang="en">
+
+<head>
+    <!-- I have not included a meta description and meta keywords tag because I do not want this page to show up on any search engines. I want this page to remain hidden until a user submits a form. -->
+    <title>Above & Beyond | Fine Indian Cuisine | Thank You</title>
+
+    <meta charset="UTF-8">
+
+    <link type="text/css" rel="stylesheet" href="restaurantss.css" media="only screen and (min-device-width: 481px)">
+
+    <link type="text/css" rel="stylesheet" href="mobile.css" media="only screen and (max-device-width: 480px)">
+
+    <link type="text/css" rel="stylesheet" href="print.css" media="print">
+
+    <script type="text/javascript" src="FormValidation.js"></script>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="links"><a href="index.html">Home</a></li>
+            <li class="links"><a href="aboutus.html">About Us</a></li>
+            <li class="links"><a href="menu.html">Menu</a></li>
+            <li class="links"><a href="location.html">Our Location</a></li>
+            <li><a href="bookings.html">Reservations</a></li>
+        </ul>
+    </div>
+
+    <div class="body">
+        <div class="content">
+            <h1>Above & Beyond</h1>
+
+            <p>Thank you, we will be in contact with you shortly. Please feel free to <a href="#" onclick="window.print()">print</a> out a copy of your reservation details.</p>
+
+            <br>
+
+            <div id="receipt">
+                <p>
+                    First Name:
+                    <script>document.write(fName.bold())</script>
+                    <!-- Using script tags in order to write the variables created in the JavaScript file. -->
+                </p>
+                <p>
+                    Last Name:
+                    <script>document.write(lName.bold())</script>
+                    <!-- This syntax targets the document and then writes out the variable. .bold() makes the string value of the variables bold. -->
+                </p>
+                <p>
+                    Contact Telephone No.:
+                    <script>document.write(pNumber.bold())</script>
+                </p>
+                <p>
+                    Contact Email Address:
+                    <script>document.write(email.bold())</script>
+                </p>
+                <p>
+                    When can we call you?:
+                    <script>document.write(contactCon.bold())</script>
+                </p>
+                <p>
+                    Party Size:
+                    <script>document.write(partySize.bold())</script>
+                </p>
+                <p>
+                    Dietary Specifics:
+                    <script>document.write(diet.bold())</script>
+                </p>
+                <p>
+                    Smoking or Non-Smoking:
+                    <script>document.write(smoke.bold())</script>
+                </p>
+                <p>
+                    Date:
+                    <script>document.write(date.bold())</script>
+                </p>
+                <p>
+                    Time:
+                    <script>document.write(time.bold())</script>
+                </p>
+                <p>
+                    Special Instructions:
+                </p>
+                <p>
+                    <script>document.write(special.bold())</script>
+                </p>
+            </div>
+
+            <br>
+
+
+            <img id="thankyou" src="beer.jpg" width="300" height="400" alt="A picture of beer.">
+        </div>
+    </div>
+
+    <p>
+        <a class="vallink" href="http://www.w3.org/html/logo/" target="_blank">
+            <img class="vallogo" src="http://www.w3.org/html/logo/badge/html5-badge-h-css3.png" width="133" height="64" alt="HTML5 Powered with CSS3 / Styling" title="HTML5 Powered with CSS3 / Styling">
+        </a>
+        <br>
+        <small><a href="http://validator.w3.org/check?uri=https%3A%2F%2Fsoc.uwl.ac.uk%2F~21249593%2Fthankyou.html" target="_blank">Link to Validation Result</a></small>
+        <!-- Link to validation result. -->
+        <small><a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsoc.uwl.ac.uk%2F%7E21249593%2Frestaurantss.css&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning=" target="_blank">Link to CSS Validation Result</a></small>
+        <small><a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsoc.uwl.ac.uk%2F%7E21249593%2Fmobile.css&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning=" target="_blank">Link to Mobile CSS Validation Result</a></small>
+        <small><a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsoc.uwl.ac.uk%2F%7E21249593%2Fprint.css&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning=" target="_blank">Link to Print CSS Validation Result</a></small>
+    </p>
+
+    <small>&#169; Copyright 2013 by Neeraj Morar. All Rights Reserved.</small>
+    <small>Image courtesy of FreeDigitalPhotos.net, "Beer" photo provided by Ahmet Guler.</small>
+    <small>Background image courtesy of www.texture-restaurant.co.uk/about.php.</small>
+</body>
+</html>

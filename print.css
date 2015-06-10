@@ -1,0 +1,103 @@
+body {
+	font-family: Calibri, Arial, sans-serif; /*Set the font of the print document to be Calibri for clarity, if Calibri isn't available it will select Arial.*/
+	font-size: large; /*Makes all the text larger for a better reading on paper.*/
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1080px;
+}
+.navbar {
+    display: none; /*Used to hide the navigation bar and save ink.*/
+}
+.navbar ul {
+	display: none;
+}
+.navbar ul li {
+	display: none;
+}
+.links {
+	display: none;
+}
+.body {
+	width: 1080px; 
+}
+.content{
+	width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+}
+span {
+	font-weight: bold;
+}
+hr {
+	margin-left: 10em;
+	margin-right: 10em;
+	color: black;
+	border-style: solid;
+}
+#mapinfo {
+	display: none; /*Hides the paragraph that appears before the image map. This was done because an image map is useless on paper.*/
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-spacing: 0;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: larger;
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px solid;
+	border-color: #d4d4d4;
+}
+#chefmap {
+	display: none; /*Hides the image map because it won't work on paper.*/
+}
+h3.google {
+	display: none; /*Hides the h3 header associated to the Google maps link.*/
+}
+h3.hidden {
+	display: none; /*Hides the h3 headers on the location page for the elements that won't work on paper.*/
+}
+#google {
+	display: none; /*Hides the link to Google maps as this will be useless to the reader due the complicated link.*/
+}
+#tfl {
+	display: none; /*Hides the TfL widget because this will also be useless to a reader on a printed sheet.*/
+}
+#thankyou {
+	margin-top: 50px;
+}
+.vallogo {
+	display: none; /*Hides the HTML5 logo for a more professional looking print-out.*/
+}
+.vallink {
+	display: none; /*Hides the link associated to the HTML5 logo.*/
+}
+a:link:after { 
+	content: " (" attr(href) ") "; /*Displays the url of the links after the relative links on each web page.*/ 
+}
+#menu {
+	text-align: center;
+}
+h4 {
+	text-align: center;
+}
+dl {
+	text-align: center;
+}
+fieldset {
+	border-style: none; /*Hides the field set border for less ink wastage.*/
+}
+.i1 {
+	display: none; /*Removes the submit and reset buttons of the form.*/
+}
+p small {
+	display: none; /*Removes the link to validation on each web page.*/
+}

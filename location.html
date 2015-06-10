@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+    <title>Above & Beyond | Fine Indian Cuisine | Our Location</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="description" content="Above & Beyond is the finest Indian Restaurant located at the heart of North-West London with recommendations like no other.">
+
+    <meta name="keywords" content="Above,and,Beyond,Indian,Restaurant,North,West,London,Indian%20Cuisine,our,location">
+
+    <link type="text/css" rel="stylesheet" href="restaurantss.css" media="only screen and (min-device-width: 481px)">
+	
+	<link type="text/css" rel="stylesheet" href="mobile.css" media="only screen and (max-device-width: 480px)">
+	
+	<link type="text/css" rel="stylesheet" href="print.css" media="print">
+	
+	<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li class="links"><a href="index.html">Home</a></li>
+            <li class="links"><a href="aboutus.html">About Us</a></li>
+            <li class="links"><a href="menu.html">Menu</a></li>
+            <li class="links"><a href="location.html">Our Location</a></li>
+            <li><a href="bookings.html">Reservations</a></li>
+        </ul>
+    </div>
+
+    <div class="body">
+        <div class="content">
+            <h1>Above & Beyond</h1>
+
+            <h2>Our Location</h2>
+
+            <h3>Address</h3>
+
+            <ul>
+                <li>Above & Beyond</li>
+                <li>232 - 234 Kingsbury Road</li>
+                <li>Kingsbury</li>
+                <li>NW9 OBH</li>
+            </ul>
+
+            <h3 class="google">Map</h3>
+            <!-- Under this subheading will be a map of the restaurant's location. W3 Validate says Google's HTML code is obsolete and suggests the use of CSS. For now, I have placed an external link to Google Maps with the restaurant's address already in the destination box. -->
+
+            <p>
+                <a id="google" href="https://maps.google.co.uk/maps?daddr=232+kingsbury+road,+nw9+obh&amp;.hl=en&amp;.ll=51.58409,-0.263259&amp;.spn=0.002867,0.004823&amp;.sll=51.48931,-0.08819&amp;.sspn=0.735388,1.234589&amp;.t=h&amp;.mra=ls&amp;.z=18" target="_blank">Google Maps</a>
+            </p>
+
+            <h3 class="hidden">Journey Planner</h3>
+
+            <!-- Ignore commenting provided under this div tag, this was done by TfL. -->
+            <div id="tfl" style="width: 187px; height: 260px; font-family: Verdana, Arial, Helvetica, sans-serif !important; background: url(http://www.tfl.gov.uk/tfl/gettingaround/journeyplanner/banners/images/widget-panel.gif) #fff no-repeat; font-size: 11px; border: 1px solid #103994; border-radius: 4px; box-shadow: 2px 2px 3px 1px #ccc;">
+                <div style="display: block; padding: 30px 0 15px 0;">
+                    <h2 style="color: rgb(36, 66, 102); text-align: center; display: block; font-size: 15px; font-family: arial; border: 0; margin-bottom: 1em; margin-top: 0; font-weight: bold !important; background: 0; padding: 0">Journey Planner</h2>
+                    <form action="http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2" id="jpForm" method="post" target="tfl" style="margin: 5px 0 0 0 !important; padding: 0 !important;">
+                        <input type="hidden" name="language" value="en" />
+                        <!-- in language = english -->
+                        <input type="hidden" name="execInst" value="" /><input type="hidden" name="sessionID" value="0" />
+                        <!-- to start a new session on JP the sessionID has to be 0 -->
+                        <input type="hidden" name="ptOptionsActive" value="-1" />
+                        <!-- all pt options are active -->
+                        <input type="hidden" name="place_origin" value="London" />
+                        <!-- London is a hidden parameter for the origin location -->
+                        <input type="hidden" name="place_destination" value="London" /><div style="padding-right: 15px; padding-left: 15px">
+                            <input type="text" name="name_origin" style="width: 155px !important; padding: 1px" value="From" /><select style="width: 155px !important; margin: 0 !important;" name="type_origin"><option value="stop">Station or stop</option>
+                                <option value="locator">Postcode</option>
+                                <option value="address">Address</option>
+                                <option value="poi">Place of interest</option>
+                            </select>
+                        </div>
+                        <div style="margin-top: 10px; margin-bottom: 4px; padding-right: 15px; padding-left: 15px; padding-bottom: 15px; background: url(http://www.tfl.gov.uk/tfl/gettingaround/journeyplanner/banners/images/panel-separator.gif) no-repeat bottom;">
+                            <input type="text" name="name_destination" style="width: 100% !important; padding: 1px" value="232 Kingsbury Road (NW9)" /><select style="width: 155px !important; margin-top: 0 !important;" name="type_destination"><option value="stop">Station or stop</option>
+                                <option value="locator">Postcode</option>
+                                <option value="address" selected="selected">Address</option>
+                                <option value="poi">Place of interest</option>
+                            </select>
+                        </div>
+                        <div style="background: url(http://www.tfl.gov.uk/tfl/gettingaround/journeyplanner/banners/images/panel-separator.gif) no-repeat bottom; padding-bottom: 2px; padding-top: 2px; overflow: hidden; margin-bottom: 8px">
+                            <div style="clear: both; background: url(http://www.tfl.gov.uk/tfl-global/images/options-icons.gif) no-repeat 9.5em 0; height: 30px; padding-right: 15px; padding-left: 15px"><a style="text-decoration: none; color: #113B92; font-size: 11px; white-space: nowrap; display: inline-block; padding: 4px 0 5px 0; width: 155px" target="tfl" href="http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2?language=en&amp;ptOptionsActive=1" onclick="javascript:document.getElementById('jpForm').ptOptionsActive.value='1';document.getElementById('jpForm').execInst.value='readOnly';document.getElementById('jpForm').submit(); return false">More options</a></div>
+                        </div>
+                        <div style="text-align: center;">
+                            <input type="submit" title="Leave now" value="Leave now" style="border-style: none; background-color: #157DB9; display: inline-block; padding: 4px 11px; color: #fff; text-decoration: none; border-radius: 3px; border-radius: 3px; border-radius: 3px; box-shadow: 0 1px 3px rgba(0,0,0,0.25); box-shadow: 0 1px 3px rgba(0,0,0,0.25); box-shadow: 0 1px 3px rgba(0,0,0,0.25); text-shadow: 0 -1px 1px rgba(0,0,0,0.25); border-bottom: 1px solid rgba(0,0,0,0.25); position: relative; cursor: pointer; font: bold  13px/1 Arial,Helvetica,sans-serif; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); line-height: 1;" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <h3 id="carparking">Car Parking</h3>
+            <!-- This <h3> tag consisting of an id to allow the anchor tag on the aboutus.html page to work. -->
+
+            <p>Cras venenatis purus et elit luctus, vel auctor lacus aliquam. Sed non nulla eu ante commodo euismod ut nec justo. Etiam vulputate felis nulla, nec bibendum nisi suscipit scelerisque. Duis sodales accumsan adipiscing. Duis blandit auctor elit, bibendum gravida felis venenatis pulvinar. Etiam gravida purus at nulla faucibus dignissim. Sed vel tortor vel lacus euismod elementum. Suspendisse lectus tortor, dignissim ut diam et, pulvinar tristique leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis sodales velit. Sed nec nisi sed nisl commodo ultricies ac egestas sapien. Etiam tincidunt tellus mi, et rutrum nunc tempus et. Maecenas vestibulum, lorem eget iaculis scelerisque, felis turpis venenatis eros, ut volutpat justo turpis eget est. Duis placerat enim nec commodo sagittis. Duis fringilla, ipsum ac vehicula commodo, ante arcu aliquam enim, sed dapibus ligula libero ac est.</p>
+            <p>Nullam at ante tempor, auctor ligula ut, consequat quam. Vestibulum placerat aliquet lacinia. Vivamus mattis tortor ante, euismod euismod nisi suscipit ut. Cras nec malesuada diam, eget scelerisque ante. Nam justo neque, semper nec pharetra id, rutrum id ante. Donec vitae enim aliquam purus posuere tincidunt dictum non lacus. Vivamus odio nisi, condimentum a enim pharetra, vestibulum mollis purus. In pellentesque vehicula ultricies. Sed purus magna, tincidunt eget arcu ac, tempor egestas nibh. Sed et mi pharetra, aliquam nulla sed, rhoncus urna. Cras eu eros pharetra, consequat est non, aliquet metus.</p>
+
+            <br>
+
+            <img src="beerpumps.jpg" width="550" height="366" alt="A picture of beer pumps.">
+        </div>
+    </div>
+
+    <p>
+        <a class="vallink" href="http://www.w3.org/html/logo/" target="_blank">
+            <img class="vallogo" src="http://www.w3.org/html/logo/badge/html5-badge-h-css3.png" width="133" height="64" alt="HTML5 Powered with CSS3 / Styling" title="HTML5 Powered with CSS3 / Styling">
+        </a>
+        <br>
+        <small><a href="http://validator.w3.org/check?uri=https%3A%2F%2Fsoc.uwl.ac.uk%2F~21249593%2Flocation.html" target="_blank">Link to Validation Result</a></small>
+        <!-- Link to validation result. -->
+		<small><a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsoc.uwl.ac.uk%2F%7E21249593%2Frestaurantss.css&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning=" target="_blank">Link to CSS Validation Result</a></small>
+		<small><a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsoc.uwl.ac.uk%2F%7E21249593%2Fmobile.css&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning=" target="_blank">Link to Mobile CSS Validation Result</a></small>
+		<small><a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsoc.uwl.ac.uk%2F%7E21249593%2Fprint.css&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning=" target="_blank">Link to Print CSS Validation Result</a></small>
+    </p>
+
+    <small>&#169; Copyright 2013 by Neeraj Morar. All Rights Reserved.</small>
+    <small>Image courtesy of http://files.the-group.net/library/GreeneKing/zips/dw_315.jpg</small>
+    <small>Background image courtesy of www.texture-restaurant.co.uk/about.php.</small>
+</body>
+</html>
